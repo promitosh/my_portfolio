@@ -10,27 +10,52 @@
     <div class="container">
         <header>
             <h1>Project</h1>
-            <p>Forecasting Passenger and Sales Revenue for an Airline using a comparative analysis of different time series models
+            <p>Project on Forecasting Passenger and Sales Revenue for an Airline using a comparative analysis of different time series models
                 – an Evidence from Biman Bangladesh Airlines data ecosystem</p>
         </header>
         
         <div class="content">
             <h2 class="page-title">Abstract</h2>
-            Background: Forecasting is critically important in the aviation industry for analyzing booking trends, demand forecasting, revenue maximization, and strategic planning. Inaccurate forecasts lead to capacity losses, increased operating costs, and financial drainage for airlines.
+            <p>
+            Forecasting is critically important in the aviation industry for analyzing booking trends, demand forecasting, revenue maximization
+            and strategic planning. Inaccurate forecasting leads to capacity losses, increases operating costs, 
+            and financial drainage for airlines.Accurate forecasting is not merely a technical exercise but a strategic imperative in the airline industry.
+            The thin profit margin, 1% , perishable inventory, and intense competition characteristic of the industry make forecasting accuracy a critical determinant of financial performance.
 
-This study employs multiple time series forecasting methods including ARIMA, SARIMA, ETS, X11+ETS, X11+ARIMA, STL+ARIMA, STL+RW-drift, and the machine learning technique LSTM on monthly passenger data of Biman Bangladesh Airlines from January 2017 to July 2025. The time series exhibits non-stationarity, upward trend, moderate seasonal strength (Fs = 0.4115), and structural breaks due to COVID-19.
+ Multiple time series forecasting methods including ARIMA, SARIMA, ETS, X11+ETS, X11+ARIMA, STL+ARIMA, STL+RW-drift, 
+                and the machine learning technique LSTM are
+            applied on the number of passenger monthly travled by Biman Bangladesh Airlines from January 2017 to July 2025.
+            The time series exhibits non-stationarity, upward trend, moderate seasonal strength (Fs = 0.4115), and structural breaks due to COVID-19. 
+Previous literature on forecasting of  Biman sales revenue has largely ignored the seasonality component,
+                This study reveled that Seasonal pattern significantly influence revenue and passenger volumes,
+                 and it depends on direction of the journey and month of the year
+                which contributes significantly to passenger sales revenue.January has a strong positive seasonal effect,
+                Seasonal high is December-January and July-August and low shows November and May.
+                BG’s per pax revenue only USD 234.
+                the Blended Fare decreases by approximately 0.0001782 units.
+Surprisingly its yield negatively correlated to the number of passengers travel.
+. requiring capacity adjustments. 
+LSTM captures long-term dependencies but underperforms with smaller datasets.
+                Approximately 41% of data variation is attributable to seasonal components.
+                STL+ARIMA achieved the best performance with RMSE of 13,016.25 and MAPE of 4.68% on test data.
+               
+               
+Time Series Forecasting, Airline Revenue Management, STL Decomposition, SARIMA, LSTM, Bangladesh Aviation, Seasonal Pattern. Yield, ASK, RPK, Blended Revenue, Blended Fare, IATA.
 
-STL decomposition with ARIMA and Random Walk with Drift methods performed optimally for traffic movement forecasting. Seasonal patterns significantly influence revenue and passenger volumes, requiring capacity adjustments. LSTM captures long-term dependencies but underperforms with smaller datasets. Approximately 41% of data variation is attributable to seasonal components. STL+ARIMA achieved the best performance with RMSE of 13,016.25 and MAPE of 4.68% on test data. Seasonal sub-series analysis revealed strong seasonal patterns in air passenger traffic and it depends on direction of the movement of the journey and month of the year.
-
-
-            
+            </p>
             <div class="division">
-                <h3>[Subtitle 1]</h3>
-                <p>[Paragraph 1]</p>
+                <h3>Methodology</h3>
+                <p>In comparative analysis revealed that STL decomposition 
+                    with ARIMA  performed well for forecasting traffic movement,
+the best fit model is STL+ARIMA(1,1,0) Model in Ljung-Box test results,  p-value = 0.6716 (much greater than 0.05) ,means residuals are uncorrelated,
+                    residuals behave like white noise (WN).
+
+
+                </p>
             </div>
             
             <div class="division">
-                <h3>[Subtitle 2]</h3>
+                <h3>Result and Discussion</h3>
                 <p>[Paragraph 2]</p>
             </div>
             
